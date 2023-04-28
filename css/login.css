@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontF {font-family: 'KCC-Ganpan';}
+
+div.content{
+    box-sizing: border-box;
+    /*border: 3px solid red;*/ /*전체틀에 빨강색 줄넣기 실제 서비스 할땐 필요없음*/
+    margin: 0 auto;
+    width: 300px;            
+}
+
+/*주민등록 번호 클래스*/
+.ssn{
+    box-sizing: border-box;
+    margin-left: 2px;
+    padding: 5px 5px;
+    width: 140px;
+    font-size: 16px;            
+    border: none;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+}
+
+.input{
+    box-sizing: border-box;
+    margin-left: 2px;
+    margin-top: 30px;
+    padding: 5px 5px;
+    width: 100%;
+    font-size: 18px;            
+    border: none;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+}
+input[type="text"]:focus {
+    border: none;
+    background-color: deepskyblue;
+    border-bottom: 3px solid black;
+}
+input[type="password"]:focus {
+    border: none;
+    background-color: deepskyblue;
+    border-bottom: 3px solid black;
+}
+.addr_css{
+    box-sizing: border-box;
+    margin-left: 2px;
+    padding: 5px 5px;
+    width: 100%;
+    font-size: 18px;            
+    border: none;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+}
+
+
+button.btn {
+    width: 100%;
+    background-color: deepskyblue;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 5px 25px;
+    cursor: pointer;
+    border: none;
+}
+button.btn2 {
+    width: 49%;
+    background-color: deepskyblue;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+p.center {text-align: center;}
+h2 {text-align: center;}
+
+.title{
+    box-sizing: border-box;
+    background-color: deepskyblue;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
