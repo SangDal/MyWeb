@@ -26,7 +26,6 @@
                 <li class="navbar__menu__item" id="mn_about" onclick="goToScroll('about')">내 소개</li>
                 <li class="navbar__menu__item" id="mn_skills" onclick="goToScroll('skills')">기술</li>
                 <li class="navbar__menu__item" id="mn_work" onclick="goToScroll('work')">내 작업실</li>
-                <li class="navbar__menu__item"  id="mn_testimonials" onclick="goToScroll('testimonials')">추천서</li>
                 <li class="navbar__menu__item"  id="mn_contact" onclick="goToScroll('contact')">연락주세요.</li>
             </ul>
 
@@ -216,135 +215,9 @@
         <div class="section__container">
             <h1>내 작업실</h1>
             <h2>프로젝트</h2>
-            <div class="work__categories">
-
-                <button class="category__btn selected" id="al" onclick="filterObj('all')">
-                    전체 <span class="category__count" id="category__countAll"></span>
-                </button>
-                <button class="category__btn" id="fr" onclick="filterObj('Front')">
-                    프론트엔드<span class="category__count" id="category__countFront"></span>
-                </button>
-                <button class="category__btn" id="ba" onclick="filterObj('Back')">
-                    백엔드 <span class="category__count" id="category__countBack"></span>
-                </button>
-                <button class="category__btn" id="ai" onclick="filterObj('AI')">
-                    인공지능 <span class="category__count" id="category__countAI"></span>
-                </button>
-            </div>
-            <div class="work__projects">
-
-                <!--프로젝트 전체 <a>태그 10개 -->
-
-                    <!--프론트엔드 2개-->
-                    <a href="#" class="project Front" target="_blank">
-                        <img src="./images/yuotube.png" alt="유튜브메인" class="project__img">
-                        <div class="project__description">
-                            <h3>유튜브 클론코딩</h3>
-                            <span>유튜브와 너무 똑같다</span>
-                        </div>
-                    </a>
-                    <a href="#" class="project Front" target="_blank">
-                        <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                        <div class="project__description">
-                            <h3>에어비엔비 클론코딩</h3>
-                            <span>여기에서 예약할뻔</span>
-                        </div>
-                    </a>
-
-                <!--백엔드 3개-->
-                <a href="#" class="project Back" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>여기어때 클론코딩</h3>
-                        <span>여기어때 백엔드개발</span>
-                    </div>
-                </a>
-                <a href="#" class="project Back" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>마켓컬리 클론코딩</h3>
-                        <span>마켓컬리 백엔드개발</span>
-                    </div>
-                </a>
-                <a href="#" class="project Back" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>트리플 클론코딩</h3>
-                        <span>트리플 백엔드 개발</span>
-                    </div>
-                </a>
-
-                <!--인공지능 5개-->
-                <a href="#" class="project AI" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>유튜브 데이터분석</h3>
-                        <span>유튜브 광고에 대한 데이터분석</span>
-                    </div>
-                </a>
-                <a href="#" class="project AI" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>유튜브 크롤링</h3>
-                        <span>유튜브영상 주소 및 제목 크롤링</span>
-                    </div>
-                </a>
-                <a href="#" class="project AI" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>자연어 처리 챗복</h3>
-                        <span>사람인줄 알았음</span>
-                    </div>
-                </a>
-                <a href="#" class="project AI" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>캠을 통한 얼굴인식</h3>
-                        <span>인식이 너무 잘됨</span>
-                    </div>
-                </a>
-                <a href="#" class="project AI" target="_blank">
-                    <img src="./" alt="지금은 넣을게 없어서 비어놓음" class="project__img">
-                    <div class="project__description">
-                        <h3>캠을 통한 아바타 만들기</h3>
-                        <span>정말 똑같이 만들어 사진인줄</span>
-                    </div>
-                </a>
-                <!-- 프로젝트전체 10개 끝 -->
-
-            </div>
         </div>
     </section>
     <!-- 프로젝트 끝-->
-
-    <!-- 추천서 시작-->
-    <section id="testimonials" class="section">
-        <div class="section__container">
-            <h1>추천서</h1>
-            <h3>이분들이 저를 보고 짱먹으라고 했어요 !</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="./images/chatGPT.png" alt="" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>나창대님은 [특정 업무나 프로젝트]에서 탁월한 성과를 창출하였습니다. 그 [업무나 프로젝트]에서 나창대님의 창의적인 아이디어와 실행력, 문제 해결 능력은 탁월하였습니다. 나창대님의 높은 업무 자세와 책임감은 [소속/회사/기관]의 성과 향상에 크게 기여하였습니다.
-
-                        또한, 나창대님은 팀 내에서의 협업 능력이 뛰어나며, 동료들과의 원활한 커뮤니케이션과 조화롭게 협업하였습니다. 나창대님은 항상 팀의 목표를 중시하고 팀원들의 의견을 존중하며, 효과적인 팀 협업을 이끌어내었습니다.
-                        </p>
-                        <p class="name"><a href="#">Mr.ChatGPT</a>/ OpenAI</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <img src="./images/chatGPT.png" alt="" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>나창대님은 님은 항상 팀의 목표를 중시하고 팀원들의 의견을 존중하며, 효과적인 팀 협업을 이끌어내었습니다.[회사명]에서의 근무하는동안 매우 뛰어난 업무 능력을 보여주었습니다. 그의 전문성과 열정적인 태도는 항상 주목받는 바였습니다. 그는 업무를 수행하는 데 항상 높은 표준을 준수하였고, 뛰어난 문제 해결 능력과 창의적인 사고를 발휘하였습니다.
-                        </p>
-                        <p class="name"><a href="#">Mr.ChatGPT</a>/ OpenAI</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 추천서 끝-->
     <!-- Contact 시작-->
     <section id="contact" class="section">
         <h1 class="contact__title">연락주세요.</h1>
