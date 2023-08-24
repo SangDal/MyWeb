@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SangDal's Portfolio</title>
     <meta name="auther" content="SangDal">
-    <meta name="description" content="그냥 개발자">
+    <meta name="description" content="나창대 Portfolio">
     <link rel="icon" type="images/png" href="./images/com48px.png">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
@@ -26,7 +26,7 @@
                 <li class="navbar__menu__item" id="mn_about" onclick="goToScroll('about')">내 소개</li>
                 <li class="navbar__menu__item" id="mn_skills" onclick="goToScroll('skills')">기술</li>
                 <li class="navbar__menu__item" id="mn_work" onclick="goToScroll('work')">내 작업실</li>
-                <li class="navbar__menu__item"  id="mn_contact" onclick="goToScroll('contact')">연락주세요.</li>
+                <li class="navbar__menu__item"  id="mn_contact" onclick="goToScroll('contact')">연락주세요</li>
             </ul>
 
 
@@ -40,9 +40,9 @@
     <section id="home">
         <div class="home__container" >
             <img src="./images/cat.png" alt="my Photo" class="home__avatar">
-            <h1 class="home__title">안녕하세요. 저는 나창대 입니다.</h1>
-            <h2 class="home__description">저는 경기도 성남시에 거주하는 나창대입니다. 열심히 할게요 ~</h2>
-            <button class="home__contact">연락주세요. </button>
+            <h1 class="home__title">안녕하세요. 나창대 포토폴리오 입니다.</h1>
+            <h2 class="home__description">[주어진 상황에서 최적의 솔루션을 찾아내는 해결사]</h2>
+            <button class="home__contact">연락주세요</button>
         </div>
     </section>
     <!-- 홈 끝 -->
@@ -52,8 +52,7 @@
         <h1> 내 소개 </h1>
         <p>
             안녕하세요.<br>
-            저는 정보보호학과 전공하였고, 지금은 코리아 IT아카데미에서 
-            KDT 수업을 받고 있는 나창대 입니다. 
+            저는 정보보호학과 전공하였고,신입 개발자에 도전하고 있는  <br> [새로운 출발 선상에 서 있는 지원자 '나창대' 입니다.] 
         </p>
 
         <div class="about__majors">
@@ -74,7 +73,7 @@
                 </div>
                 <h2 class="major__title">백엔드</h2>
                 <div class="major__description">
-                    Python, Node.js, Django
+                    Python, Node.js, FastAPI
                 </div>
             </div>
 
@@ -92,11 +91,17 @@
 
         <div class="about__jobs">
             <!-- 회사 1 -->
+            <h1> 경험 사항 </h1>
             <div class="job">
-                <img src="http://www.e-wrg.com/web/img/logo.png" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                <div class="job_img_div">
+                    <img src="http://www.e-wrg.com/web/img/logo.png" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                </div>
                 <div class="job__description">
+                    <p class=".job__company"><!-- 회사명 -->
+                        우리가요양원
+                    </p>
                     <p class="job__name"><!-- 직급 -->
-                        요양원 사무원
+                        사무원
                     </p>
                     <p class="job__period"><!-- 근무기간 -->
                         2021.11 ~ 2023.02
@@ -106,8 +111,13 @@
 
             <!-- 회사 2 -->
             <div class="job">
-                <img src="http://www.cephas.kr/images/common/logo.png" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                <div class="job_img_div">
+                    <img src="http://www.cephas.kr/images/common/logo.png" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                </div>
                 <div class="job__description">
+                    <p class=".job__company"><!-- 회사명 -->
+                        세파스
+                    </p>
                     <p class="job__name"><!-- 직급 -->
                         자전거 판매, 수리
                     </p>
@@ -116,6 +126,43 @@
                     </p>
                 </div>
             </div>
+
+            <!-- 회사 3 -->
+            <div class="job">
+                <div class="job_img_div">
+                    <img src="https://www.hlsc.co.kr/tpl/default/images/mainlogo.png" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                </div>
+                <div class="job__description">
+                    <p class=".job__company"><!-- 회사명 -->
+                        하이랜드 스포츠
+                    </p>
+                    <p class="job__name"><!-- 직급 -->
+                        영업사원
+                    </p>
+                    <p class="job__period"><!-- 근무기간 -->
+                        2018.04 ~ 2018.08
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 회사 4 -->
+            <div class="job">
+                <div class="job_img_div">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXsAAACFCAMAAACND6jkAAABEVBMVEXoNCb///////3oMyjmNCbqMyb///z//v//7eniMyT/3djnY1XPU0j///vkYVTZLh//5N39rqT/9vH0nZLZYVXOIg/uuLP/9PD2xcDtvrnYJxfnmZDPOzDOcGX60MrKQDTONCmvIAXOaVzrLiDZOyz2zMT8w7zXIxHwp5/XMCHpraXbdGrIKhn4s6r/9u7AVUjshHvfk4rLKBbWfnTOS0DhbGHkrqT12tPmkYf6oZe2HQDnd2vhOy/cVEngRTj92M/menHaRTngmI7oioDwysPEPjLENijGTEDbcGXjVUntjIHIVUrQenDjpZzCMCHYW1HvYVT6e278i4CtKRWaFQDFDwC3SEDAZlr9lYiwUETQhXnPwWZtAAARd0lEQVR4nO1dDUPayNYOw0xIKGnSCAQHhFQ+g+gqoNIPS5WqWFe9t+/te/fd//9D3pkzSUhC0O69W6whT9uVTcJJ8szJmfM1UZJSpEiRIkWKFClSpEiRIkWKFClSMGSf+wJ+LZB1nzDl38dauecnC3GP13n2FBKnH6se63iT6SdE/Fvbybj6t84cunZr9+vhOSigc6OzN9DXNuS/KJ7j9rHdQcjqFJ1sOvGu0ejAyejIzGUQ0rYcstHkkyZgndzjYV1DnPwP+kYbHfzxrPjwUDz7uD53gzgTM8O4lzvDzTb4+uu6wdB+UNd1xmxzPEUZBmVns9Weca+whz9jFNfGvdQ8Njj3qKxLmx3lcu4ZGPfr08HWQ0+RkVVwh3tjlf85uCfEKfSUd0M+xahkc23+erkXUS2RsEpvPjHqifpJp9jfs2F4Dr0HQEKH1DqVXZtuqOo/F/fCpaWHmmx29mrrm+h/JTyDzREAB+eKeZsIKR1nI5OZz2Zz4ORVkzubLMgCA7T+C3hePCf3eDzl50bKHl37uX8FPCf3pb4M3PcGG6fygDVzn82CaQHzrtaUTI5ZHOt8Q3MLcdz/QBkvPhUQyAg/zSax+5DWMXulFefILj75H5Pkjka5J6TZpALN5uqYk+0hy7t9lSYLMTw/HSuF7PIzI5QvxHqYPyDhpSPCveq0GoXjz4eHh5/nDw3bUeMVGKstm8GJYU2YE8duPMxBzHGh1tLVGPKGHciomZOYiZbgiITgheCktDcEuWeR/vmkPFVkIAUp+fLkhqrY1+XFt9Sb8jbDm/M4EjDVzy6285aGuBRZqZ/sndNFX4L4QeixBhPt9GpZBqb04YhJQAsJLRo8LBHckyD3zm3fsHIIrDCwL1tGf9eJUX39H5qsaVqcuSCSPa8YpuyJQYiP4mQcaUtQW5UMZ1abhdWejTBRB3sdZSEhAxJ6Y903aQnBgnu90FO8u10AWb1bfYl9/RUcGeUeM2MxmFfMZTGyMWnogSOJPrJAfLsWnTOYhI62LEEzqleM/cQYHCnA/fA4H9A0+AvIIeN4GL3dldyrg6qBXDG5zEIKs+uVcVDD7Trssg6dCPfqcKKgnP/QZAJPYadAuceTOO5/OzGFmQctNU1TXqic2bcj97uCe0ktdDzW2EAi0zKFTMTHUBk5/oHDGQwQqkT9SzpuyzBqMP4yk6DxlI9gXxnp/EKS0lnicq98cQ0F0pRObzIajSbVjuI++sjs34cdFf1VLoZ7Qq/r3pBp+f0qiOlVLBlGlM2ZX5nRFyn8hijZmrsRJ4c26p690QxPQsfS3AFVJqUEeZsu9+6jjaz27HJAu8yl7tLB5ahtCY3TyrWQ5sdyT5yCIQ6XlfL8atgFMaXBdTUPzxTStjzu9Z4Gx+1HEpjqbd5VeqWyezX0LuR6MhWqIWuTwc/nZF0A7nO5nHBIjKMW8wYFHxhj2hoZws/T7kLGId7mcHMBw9je0yl2Z0XMPNfxBVCXH/PDmcFQr/PwJCi7EedneCpmGjTddQIXotJGz3Id3xFlNicZyu/pPac+VxkzPVx4csyr0MfbGsyZ5iQwKZIo9/CdQUfYcLN3r+MQO+pwPmXW/8g1MKTUF759NZxEI7W+7KYZGnrwgSBMQtFAoCDG7nNku38KAtxrnUb0tghRr7ZNNk+yew52kYS5x8A0nQlCTWYWouwQvZCXpw13s36mCLvSCE/V+syEh8y6GC5fCL2diqFtD5JS5fK5z8iVmNIdI79WlrmjIXcCljbKPa96F/JiargYxuUhaDH/2XVziC3U3rwL5y/VS9G3Y17E2XSijw0waeYs6pa+VHDuc+BHC2u8DPUqLwzBfBGahrnnPh/RBaFy3yaxDa7Ojdd2SOdiBp96j5m3vSeDeesPwJFckkB3xONyOm7+Fzf8C0HoPWPfGumRXR7TdGSBKSgvnJKYudaGoBgZnNA47r2VJsRLokWzCeq5eHCM+Lwmg9OD6YB9MRnhlc99Z2XxqGmXwfsI5PiXuXcOxcMx6ZInGv3ongi4puFpgThHvHibsY5WmRQiNYRRqg+SxD3T6mNX7ZcLJ8Q5BlaYnwL5FEZtiHtOFbG3xZYVhouDmaYsX/dQEVZ91hXS+WPClx3ZZTDnxs1KCbjUg69a42S4OtALy+4nbwfz4xGUIOJBHQgqeUplSe+bEFYh1I+vent1GR77CvVG27XwCZtjIWEfhiQ+bdA8ttzcZ5K4l8uPOA9EFLVR3uU+7N/D95pzbu6RNXtyGizlIa9vHkeKtLQI/SLaaAWvfDCa46nMx6dHpSR0MLs2x7x4jHt6BCkAswUaml2OraTmBJhTik8sYCGDr5AtlTtLSbQPIrF5G2tyMDwJTbBsuUw7Gd3jXi5tJBb9Abl4YfNFxUr/HeyEdq6KNEHY5nASulUIAowxebyvmBROIUJSdoV3uthDD4WfdPlI5MQiA5lzX28lYrL1uN/xPMwlS8uoVIVnnbvRs+Kml/S+W4Un47TxuNpjHdxEJPed6K7SH8B9nsW6KzWaDC5ACeqxtcoXhyXul8CLeLse9963YrjP+dyvJka9FqUxoxDdg0tffe5XgjiJ5N6LrGJrcvoOFPhkzj33VbKr9J7bnEfae7Del2UeRW8N/W3iOcNYf9rmYDK4E9x/SgT36rmYa48CbkfU7BD6p8YLT9onj5eVc+0t8ZY3xEE/hpYcWbn2I1P/QPpZzLXXcdyz4YRuWTcGSIi9xy0DptETh6zMipPuHbPSOaQII03iuN8Dz9vaW+HnYLBdECBzh+nL3n10wQM9Bj9W233Ed282vgD32ysN5MsCbYs43V7NvVSqM+ckJ9dL7psolm1O8wGGUO6t6CgG7puvDtySItLqo4YTejyaY4gQmIRHuC/CdCFXk9G3TLo9Eeucrbaz+rnFPTut7xVLl7knjVPY0olW1YNQz8qm28OAkPXleEgxsC+is1od4trpI+sg6IxX2JA2T0Zcy3wYkzd1oJ6fNI/eO7HvhClerEWOcp8lg6rIpe14Jdk4qKVG3xBdB+ycWn5Uo/7ETBwxj1qjlVEevocKe86IaWV7kcANWICQMR5WpQPIrQFdHvWF+xfhns8Ar0WLSXuplycoieh2sQx2g5fCkFU/vPcdfX0Os75csWO5z/JkNoxOZr+UEO4lWhXl8FXmgtdhQU2FlYWDlrknA9EeYk4eX8hAmoPCPnR8wlnN+ivPdmNHzDzaZBj3xaykFtwK+zwhtRMe5hugsuaFq04RD7N0pEEW02i4u7Pxdas/IQbIKPPuihOJdISEVefhREFuz451TLPQhMkT+6LgG7sEiDCD9QVad+Syvc43Xf1UkOFXfs+5jHU0iCk5DY8U5FaLFhs59yhct+J5eVnk0wIeIMaioYMIVRXpIazzVf0welo5kLsedGTRirATIR8KwlduE4Ny5kZ4f8vdPzOwXXc7DO7uI0UJotpHbldSJ2iGY7iXaEEMEjJGwTYDnCWE0MLnK56s8ydWdVjs8dYf5SGYSi66vVXKTrimxdwh2tg23coYH5ikcE/0oiEcP7NTGKre48x+qE5j33QJHesh7uWwj8lRmohjc9aktljtwJt8Bg9Tpf3B1tXgU6Xv9iwtFA8Q5xCJrjSrd+8ELgSrg2LdXRVQfsyLfYGgRa6yPNGiXDxQqqoqZv8oPbsw3DZUo0iD5ii+L20A7WfMA2fe4zkTg0EOdY65Wy9r7dGn4OFYLZ1tiRKjm74mUqlquQ2506Mal4CFhOKJJeYH5DayJELpBYYzxWt7NcqH15f39/eX17Ny3gQ9ZEMyd0ITAdgcFOVeHex7TasH+d7u9dX9/dXl7aRiaIivqJAP3gkt958IXediA+kjXKu6EmRr2pu7EmZt4Q2w6aE+9l8u+PJrJwJk+JD31xtoppKf5hXefJ2DLnozP44U+OK5JwR65720gWlMp4alyaLDEiFzv7HQcu8bUjh1R3wtgA5wLkGRvd5mZJavVD90e/Hc+zzoxYoWXGQDLr2r9Z1CNHe1VK/14OwZXtYABKAAkRdgLvAS92E4e/mQhMxi8ZDVs9XENN8HoQ4ODeTF+3CzojdZzs+GS6meIPecC6AQ1i3rNeY9wuQhkHPXMZiVh6HXHBUHb5+QELiEjDcOVv3Mk5AYa5/1/Aan0DMiC52Qlu+Nl8p7kEGImWslCIEGe/uWFqYOaRXm+oQOC11BVMLcX3bhX4hZnzQWGbSkuDruQwytH9ezumHxFX4IaczsG5UZn9uWn3L9H4bCUI9LfhLVua3mFUuYHGZrFKO8Z4czj08p7uC2xyRocCEyAgm1QMIfJ+MF1sGnmPnR1Lk5vCtvt9vt7ZOLvXOdxt8l/nhzxnD+0f3/YLEK87UKrdez/nal3a5snxwdf6J0aYXu4tyugEU2me9hF/J6drckITlrrZYB8ZRj27VazbYdXV1pWrn/z8OAVYKw7rS4lJrdcpy4VeVPXUhIgp6MHsCnAe9CgHcp/Fdz2kLM80l4gdike02RIkWKzcOvNqX9YpeTIkWKFClSrAletjiQglsNf6ebZyaRrYnNzfxEBDj7D7iXFtyn5P8lPF51Cm/NZjHQu3Rgqvl/GXixpkSk0LF4hZaf3/VewCi6mfhBHrxhkIIbAeu+iZcKTEsikZ7VS1SSVFoSxRPeFNjslkpdWPqQldzDaCkEeCcOVsMbE/JuhJ8OTP/55huUEOmHN99U0vrjzSto9stKuj2fvHs3Kdq8gqt+Y4cRif0I4RtvrVdfvwtv1FO78wPAuPRGbtuSWGnepqRxqk1E56s67isaQprRbzHy6XZm225KtOL2KrgdC50WJkQdmUgUA/mrBGW5M0i5/xFw7iv3kuC+4nIPvynpdqopla9bbUtrj4lEy4hzr37YWqDaljt8iZp69kdg4xR1EvTyuZ8J0Pv/GTC8PxHcy0fvBwNdbVU0Y/d+OLwaGfL+UNIF95I+eOvjX3eCe+y8f/v2PWx6//Zf/ZT7HwTjHikdjrKBhN7nO5391/rIUnb4i3Ok0gxZRVXoPZaaZ2/2fTAVF3ofsPe9fMr9DyLLuOftI4i3RwL30AQyG5a1irv+s5bXql3X5kjNvYOFtQd7z7j/3QpOAin3Pwiu96d/zmazr6MvQu9ReTQ7PLe3tb5owGnCR497cvN1Ydq/gN4T/XfL2t965+OfomeKhHpEUiwB5tpBl+H7nebNtd0uJ7ysi+Ul9het53HP+Oz6+D5R9h14J4ml/O/b9z7chsOU+yeQFX4OkUh34efA8kyNL0Lk/I0Vc+ZxHwyt6PDy37clmgW971cX+JCQNeI/G9zmcB9TbX7vawvuJfXBkLeHFGN62ZGNK3eubW31gzg5Odn/7HDuxbvVPXsfu6owRRSc++m/iwy/bSOPex4a6VVNLs8vL/fapnWoY5f7qRbBwYlDmJ/TY2Ch2Db/2fsW02qbYhmMe0YgQJYD3BM8qCqyqRyYmsGXhQv//uPhVjWMreOPzKJ3KaXd+7w2+s4+dZPxaoSfj2zpj6mPN4G4lkVMx+W8okz7Dzw35sZWdOjYQThUlVSqc9CrvDz6Lj7+B+2amwj8seajJQW4l7Bu187OauK3LgH3jNGGEgLzc5o3nTzg1ESK+JRPyBsXfzpEe2rT7VGt+bk0b49QYVrWOi0iqedGABaPrZpn0wNTwDLFp4PJpv7u4L+MAE2kdTh5zT9E3x2tfph8YGY/27r+zcf/nfB8DmkVdyKYn6VG52ksMYRpoPKxKMZmmVXnO3BrPt9zMd8p87iWYFXV+R8G3sAPP9Z2A4nCqt54sV0dGwFrb4p8jnuAe9harnIToV5r6LS+wLvN/NXYzwGiXh+g3+4DPmZqXdYF4P7P3QWKyXi14ksA417LBP376crf6JDibwbBjWk+6OG3H/nFBCn+ZqgfW0F8XL0mNMXfDt7IpqY9aM+IrP+fFGsDj53SdtcUKVKkSJEiRYoUKVKkSJEiRYoUKZKM/wf55rYaSineCAAAAABJRU5ErkJggg==" alt="" class="about__jobs__icon"><!-- 회사 이미지넣기 -->
+                </div>
+                <div class="job__description">
+                    <p class=".job__company"><!-- 회사명 -->
+                        바이클로
+                    </p>
+                    <p class="job__name"><!-- 직급 -->
+                        자전거 판매, 수리
+                    </p>
+                    <p class="job__period"><!-- 근무기간 -->
+                        2017.08 ~ 2018.04
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- 내 소개 끝-->
@@ -124,62 +171,26 @@
         <div class="section__container">
             <h1>기술</h1>
             <h2>소개</h2>
-            <p>신입 엔지니어 입니다. 대학교때 윈도우 os, 리눅스 os 공부하였습니다.  </p>
+            <p></p>
             <div class="skillset">
                 <div class="skillset__left">
-                    <h3 class="skillset__title">Language</h3>
+                    <h3 class="skillset__title">Skills</h3>
                     <!-- 5가지 언어 -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%"></div>
-                        </div>
-                    </div>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                    <li>MariaDB</li>
+                    <li>MongoDB</li>
+                    <li>Node.js</li>
+                    <li>Numpy/Pandas</li>
+                    <li>PyTorch</li>
+                    <li>NLP</li>
+                    <li>Scikit-Learn</li>
+                    <li>EasyOCR</li>
+                    <li>OpenCV</li>
+                    <li>YOLO</li>
 
-                    
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>DBMS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Python</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>데이터분석</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>머신러닝/ 딥러닝</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <!-- 5가지 언어 끝-->
                 </div>
                 <!-- 기타 기술 시작-->
                 <div class="skillset__right">
@@ -188,21 +199,24 @@
                         <ul class="tools__list">
                             <li><span>Visual studio Code</span></li>
                             <li><span>Colaboratory</span></li>
-                            <li><span>Pycham</span></li>
                             <li><span>Jupyter notebook</span></li>
+                            <li><span>Pycham</span></li>
+                            <li><span>Slack</span></li>
+                            <li><span>Git/Github</span></li>
                             <li><span>Github Desktop</span></li>
                         </ul>
                     </div>
 
                     <div class="etc">
-                        <h3 class="skillset__title">ETC</h3>
+                        <h3 class="skillset__title">Hobbies & Interests</h3>
                         <ul class="etc__list">
-                            <li><span>Math</span></li>
-                            <li><span>Music</span></li>
-                            <li><span>Run</span></li>
+                            <li><span>Bowling</span></li>
+                            <li><span>Bass Fishing</span></li>
+                            <li><span>Bicycle</span></li>
                         </ul>
                     </div>
                     <!-- 기타 기술 끝-->
+
                 </div>
             </div>
         </div>
@@ -215,21 +229,77 @@
         <div class="section__container">
             <h1>내 작업실</h1>
             <h2>프로젝트</h2>
+            <div id="projects" class="background-alt">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="project shadow-large">
+                            <div class="project-image">
+                                <a href="#"><img src="./images/safedream.png", width=300px, height=300px></a>
+                            </div>
+                            <!-- End .project-image -->
+                            <div class="project-info">
+                                <h3>지켜 Dream</h3>
+                    <div class="left-align">
+                                <p>
+                                * 서울시 공공데이터를 이용한 FrontEnd, BackEnd 구현 및 DBMS와의 연동 프로젝트. <br>
+                                * 서울시 아동 안전지킴이집 및 여성 안심지킴이집의 정보를 얻기위해서는 각각 다른 앱을 <br>다운받아서 사용해야 하지만 
+                                두 앱을 한곳에 담으면 편리할거 같아서 구현하고자 기획. <br>
+                                * 회원가입/로그인 기능, 문자메시지, 전화기능, 지도에 지킴이집위치, 공지사항, 문의사항, 앱 플레이스토어에 배포 <br><br>
+                                * <a href="https://play.google.com/store/apps/details?id=com.LUCK.safeDream&pcampaignid=web_share" target="_blank" style=" color: deepskyblue" >플레이스토어 경로</a>
+                                </p><br>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1U9rWpP9OL8_yIy5pSgT7kJ_vZpV_Iy4u/view?usp=drive_link" target="_blank" style="font-size:1.5em;">View Project PPT</a> |
+                                <a href="https://github.com/safedream-app/safedream-app.github.io" target="_blank" style="font-size:1.5em; color: deepskyblue;" >Code Github</a>
+                            </div>
+                            <!-- End .project-info -->
+                        </div>
+                        <!-- End .project -->
+        
+                        <div class="project shadow-large" >
+                            <div class="project-image", background="cover">
+                                <a href="https://drive.google.com/file/d/1j8CcfGzKc_RA44iaOccKmcAXTuqSr5Di/view?usp=sharing"><img src="images/project_interviewdream.png", width=300px, height=300px></a>
+                            </div>
+                            <!-- End .project-image -->
+                    
+                            <div class="project-info">
+                                <h3>면접 봐Dream</h3>
+                    <div  class="left-align">
+                                <p>
+                        * 인공지능 학습모델, 데이터 크롤링, 자연어처리를 이용한 챗봇(Chatbot) 제작 프로젝트. <br>
+                        * 취업준비생들이 본인의 자기소개서를 기반으로 원활한 면접준비가 가능하도록 <br> 자기소개서를 입력 시 대화형으로 면접질문이 출력되는 챗봇 기획. <br>
+                        * 자기소개서 입력 시 사전학습된 질문생성 모델을 기반으로 면접질문 출력, <br> 대화형식으로 면접질문을 순차적 출력 + 웹사이트 배포 <br>
+                        * Frontend: HTML,CSS,Javascript <br> AI+Backend: Python, FastAPI, HuggingFace, OpenAI <br> Tool: Pycharm, VS code, Github, Slack
+                    </p><br></div>
+                    <a href="https://drive.google.com/file/d/1j8CcfGzKc_RA44iaOccKmcAXTuqSr5Di/view?usp=sharing" target="_blank" style="font-size:1.5em;">View Project PPT</a> |
+                    <a href="https://github.com/SangDal/Project_InterviewDream" target="_blank" style="font-size:1.5em; color: deepskyblue;">Code Github</a>
+                            </div>
+                            <!-- End .project-info -->
+                        </div>
+                        <!-- End .project -->
+        
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- End #projects -->
+
+
         </div>
     </section>
     <!-- 프로젝트 끝-->
     <!-- Contact 시작-->
     <section id="contact" class="section">
-        <h1 class="contact__title">연락주세요.</h1>
-        <h2 class="contact__email">skckdeo@hanmail.net</h2>
+        <h1 class="contact__title">연락주세요</h1>
+        <h2 class="contact__email">sangdal91@naver.com</h2>
         <div class="contact__links">
-            <a href="#" target="_blank">
+            <a href="https://github.com/SangDal" target="_blank">
                 <!--내가 사용하는 이모티콘 넣기-->
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="#" target="_blank">
+            <!-- <a href="#" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
-            </a>
+            </a> -->
         </div>
         <p class="contact__rights">
             2023  SangDal -All rightes reserved

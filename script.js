@@ -1,7 +1,3 @@
-
-    
-
-
 /*이렇게 하고싶은데 23.04.14 완성 영상 22:18초*/ 
 /*1번*/
 // const toggleBtn = document.querySelector('.navbar__toggle-btn');
